@@ -1,0 +1,88 @@
+body
+{
+  
+}
+
+.jumbotron
+{
+  background: url("../images/back.png");
+}
+.btn 
+{
+  width: 260px;
+}
+
+#title
+{
+  padding-top:20px;
+}
+
+@media only screen and (max-width: 1080px) {
+  body
+{
+  background: url("../images/back2.png");
+  background-size:100%;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  font-size: 20px;
+  text-align: center;
+}
+}
+@media only screen and (max-width: 1920px) {
+  body
+{
+  background: url("../images/back.png");
+  background-size:100%;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  font-size: 20px;
+  text-align: center;
+}
+}
+/* ==============================================================================================================================
+    MOBILE: Menu
+   ============== */
+
+
+.push_button{
+	position:relative;
+	width:100%;
+	
+	display:block;
+	text-decoration:none;
+	margin:10px auto;
+	border-radius:5px;
+	/*border:solid 1px rgb(0,80,200);*/
+	/*background:#931c1f;*/
+	text-align:center;
+	/*padding:20px 30px;*/
+	
+	-webkit-transition: all 0.1s;
+	-moz-transition: all 0.1s;
+	transition: all 0.1s;
+	
+	-webkit-box-shadow: 0px 5px 0px rgb(20,80,200);
+        -moz-box-shadow: 0px 5px 0px rgb(20,80,200);
+        box-shadow: 0px 5px 0px rgb(20,80,200);
+
+
+}
+.push_button:active{
+    -webkit-box-shadow: 0px 1px 0px blue;
+    -moz-box-shadow: 0px 1px 0px blue;
+    box-shadow: 0px 1px 0px blue;
+    position:relative;
+    top:7px;
+}
+
+
+
+#doc
+{
+   margin:0px auto;
+   width:70%;
+}
+
+
+
+

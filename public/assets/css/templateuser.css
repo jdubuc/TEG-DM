@@ -1,0 +1,275 @@
+html, body {
+	width:100%;
+	height:100%;
+  padding:0; margin:0;
+  text-align:center;
+  color:rgba(0,0,0,.8);
+/*text-shadow:0 1px 0px rgba(255,255,255,.5);*/
+font-size:25px;
+font-family: 'Didact Gothic', sans-serif;
+line-height:0px;
+}
+.bg{
+  position:absolute;
+	width: 100%;
+	height: 100%;
+	background: -moz-radial-gradient(center, circle cover, #89d9d8 0%, #066968 45%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 45%, color-stop(0%,#89d9d8), color-stop(45%,#066968)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, circle cover, #89d9d8 0%,#066968 45%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, circle cover, #89d9d8 0%,#066968 45%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, circle cover, #89d9d8 0%,#066968 45%); /* IE10+ */
+	background: radial-gradient(circle at center, #89d9d8 0%,#066968 45%); /* W3C */
+}
+
+.profile{
+  text-align:left;
+  margin-top:120px;
+  display:inline-block;
+  position:relative;
+  z-index:999;
+  background:rgba(255,255,255,.5);
+  width:650px; height:305px;
+  border-top:1px solid rgba(255,255,255,.7);
+  border-radius:10px;
+}
+.profile:before{
+  content:"";
+  width:100%;
+  height:11px;
+  margin-top:55%;
+  background:url(http://maxme-life.ru/tests/arrow_down.png) no-repeat center;
+  position:absolute;
+  z-index:5;
+  
+}
+
+.prof_pic{
+  margin-top:25px;
+  margin-left:25px;
+  border-radius:50%;
+  display:inline-block;
+  position:relative;
+  padding:0;
+  line-height:0;
+  box-shadow:1px 1px 0 rgba(255,255,255,.4);
+
+}
+.prof_pic:before{
+  border-radius:50%;
+  content:"";
+  width:100%;
+  height:100%;
+box-shadow:inset 0px 0 26px rgba(0,0,0,.4);
+  position:absolute;
+}
+
+.prof_pic img{
+  z-index:0;
+  border-radius:50%;
+  width:170px;
+  height:260px;
+}
+.social{
+  width:90px;
+  height:100%;
+position:relative;
+display:inline-block;
+padding:30px 0;
+  box-sizing:border-box;
+vertical-align:top;
+text-align:center;
+}
+.social:before{
+  content:"";
+  top:0;
+  width:1px;
+  left:45px;
+  height:300px;
+  position:absolute;
+  background: -moz-linear-gradient(top,  rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.2)), color-stop(100%,rgba(0,0,0,0)));
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0.2) 0%,rgba(0,0,0,0) 100%);
+background: -o-linear-gradient(top,  rgba(0,0,0,0.2) 0%,rgba(0,0,0,0) 100%);
+background: -ms-linear-gradient(top,  rgba(0,0,0,0.2) 0%,rgba(0,0,0,0) 100%);
+background: linear-gradient(to bottom,  rgba(0,0,0,0.2) 0%,rgba(0,0,0,0) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c2000000', endColorstr='#00000000',GradientType=0 );
+
+}
+.social:after{
+  content:"";
+  left:46px;
+  top:0;
+  width:1px;
+  height:300px;
+  position:absolute;
+background: -moz-linear-gradient(top,  rgba(255,255,255,0.76) 0%, rgba(255,255,255,0) 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.76)), color-stop(100%,rgba(255,255,255,0)));
+background: -webkit-linear-gradient(top,  rgba(255,255,255,0.76) 0%,rgba(255,255,255,0) 100%);
+background: -o-linear-gradient(top,  rgba(255,255,255,0.76) 0%,rgba(255,255,255,0) 100%);
+background: -ms-linear-gradient(top,  rgba(255,255,255,0.76) 0%,rgba(255,255,255,0) 100%);
+background: linear-gradient(to bottom,  rgba(255,255,255,0.76) 0%,rgba(255,255,255,0) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c2ffffff', endColorstr='#00ffffff',GradientType=0 );
+
+
+}
+.social a{  
+  position:relative;
+  display:block;
+  margin:0 auto;
+  background:white;
+  width:25px;
+  height:25px;
+  margin:15px auto;
+  border-radius:40px;
+  border:1px solid rgba(0,0,0,.2);
+  box-shadow:0 1px 1px rgba(0,0,0,.3);
+  position:relarive;
+  z-index:3;
+}
+.social .twitter{
+  background:url(../images/twitter.png)center no-repeat white;
+}
+.social .in{
+  background:url(../images/in.png)center no-repeat white;
+}
+.social .dr{
+  background:url(../images/dribble.png)center no-repeat white;
+}
+.name{
+  font-size:40px;
+  position:relative;
+  display:inline-block;
+  vertical-align:top;
+  text-align:left;
+  margin-left: -15px; 
+}
+.person{
+  color:rgba(0,0,0,.8);
+  text-shadow:0 1px 0px rgba(255,255,255,.5);
+  font-weight: bold;
+  font-size:25px;
+ font-family: 'tahoma', sans-serif;
+  line-height:0px;
+  padding-top:40px;
+}
+.vs{
+  margin:0;
+  padding:0;
+  padding-top:18px;
+  color:rgba(0,0,0,.8);
+  text-shadow:0 1px 0px rgba(255,255,255,.5);
+  font-size:20px;
+ font-family: 'Didact Gothic', sans-serif;
+}
+.vs1{
+  margin-top: 20px;
+  
+  color:rgba(0,0,0,.8);
+  text-shadow:0 1px 0px rgba(255,255,255,.5);
+  font-size:20px;
+ font-family: 'Didact Gothic', sans-serif;
+}
+.name a{
+  display:inline-block;
+  margin-top:20px;
+  
+  
+  background: rgb(0,160,221);
+background:url(http://maxme-life.ru/tests/bk33.png), -moz-linear-gradient(top,  rgba(0,160,221,1) 0%, rgba(0,92,128,1) 41%);
+background:url(http://maxme-life.ru/tests/bk33.png), -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,160,221,1)), color-stop(41%,rgba(0,92,128,1)));
+background:url(http://maxme-life.ru/tests/bk33.png), -webkit-linear-gradient(top,  rgba(0,160,221,1) 0%,rgba(0,92,128,1) 41%);
+background:url(http://maxme-life.ru/tests/bk33.png), -o-linear-gradient(top,  rgba(0,160,221,1) 0%,rgba(0,92,128,1) 41%);
+background:url(http://maxme-life.ru/tests/bk33.png), -ms-linear-gradient(top,  rgba(0,160,221,1) 0%,rgba(0,92,128,1) 41%);
+background:url(http://maxme-life.ru/tests/bk33.png), linear-gradient(to bottom,  rgba(0,160,221,1) 0%,rgba(0,92,128,1) 41%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a0dd', endColorstr='#005c80',GradientType=0 );
+
+  
+  color:white;
+  font:25px Trebuchet MS;
+  text-decoration:none;
+  padding:5px 25px;
+  text-shadow:0 2px 1px rgba(0,0,0,.6);
+  border:1px solid #006ab9;
+  border-radius:2px;
+  box-shadow:0 2px 2px rgba(0,0,0,.8);
+}
+
+
+
+
+
+.effect
+{
+  width:100%;
+  height:100%;
+  background:#d7ccdb;
+position:absolute;
+  
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            border-radius:10px;
+}
+.effect:before, .effect:after
+{
+	content:"";
+    position:absolute;
+    z-index:-15;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:50%;
+    bottom:0;
+    left:10px;
+    right:10px;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+}
+
+#datos
+{
+  margin-top: 12px;
+  padding-top: 15px;
+  font-family: 'tahoma', sans-serif;
+  text-align: center;
+  text-shadow:none;
+  border-radius: 10px;
+  position:absolute;
+  width: 100%;
+  height: 425px;
+  background: rgb(224,213,234);
+  -webkit-box-shadow:0 1px 6px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 6px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 6px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  }
+
+header h1
+{
+  font-family: 'tahoma', sans-serif; 
+  font-size: 25px;
+  color: rgb(6,105,104);
+  }
+#regresar
+{
+
+}
+
+#Imprimir
+{
+position: relative;
+}
+
+#informacion
+{
+height: 100px;
+line-height:20px;
+}
+#videop
+{
+width:100%;
+}
+#telefono p
+{
+height: 8px;
+
+}
